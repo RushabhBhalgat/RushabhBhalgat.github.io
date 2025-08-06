@@ -2,6 +2,23 @@
 
 A modern, responsive portfolio website built with HTML, CSS, and JavaScript featuring a professional dark theme with AI/coding aesthetic. This is the official portfolio of Rushabh Bhalgat, hosted at https://rushabhbhalgat.github.io
 
+## 🚀 Quick Start
+
+1. **Replace Images**: Update the placeholder images in the `assets/` folder:
+   - `profile.jpg` - Your professional profile photo
+   - `wcareers.jpg` - Screenshot of your WCareers project
+   - `hireme.jpg` - Screenshot of your HireMe project  
+   - `prosumely.jpg` - Screenshot of your Prosumely platform
+   - `favicon.ico` - Your website favicon
+
+2. **Update Content**: Modify the content in `index.html` to match your:
+   - Personal information and bio
+   - Skills and technologies
+   - Project details and links
+   - Contact information
+
+3. **Deploy**: The site is automatically deployed via GitHub Pages at https://rushabhbhalgat.github.io
+
 ## 🚀 Features
 
 - **Modern Dark Theme**: Professional dark color scheme with cyan accents
