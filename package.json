@@ -1,41 +1,56 @@
 {
-  "name": "academic-pages",
-  "version": "0.8.1.1",
-  "description": "Academic Pages Mistakes Jekyll theme npm build scripts",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/academicpages/academicpages.github.io"
+  "name": "rushabh-bhalgat-portfolio",
+  "version": "1.0.0",
+  "description": "Modern portfolio website for Rushabh Bhalgat - AI Developer & Founder",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "live-server --port=8000 --open=/index.html",
+    "build": "echo 'No build process required for static site'",
+    "deploy": "echo 'Deploy to your hosting platform'",
+    "lint:css": "stylelint css/*.css",
+    "lint:js": "eslint js/*.js",
+    "optimize": "imagemin assets/*.{jpg,jpeg,png} --out-dir=assets/optimized",
+    "serve": "python -m http.server 8000"
   },
   "keywords": [
-    "jekyll",
-    "theme",
-    "minimal"
+    "portfolio",
+    "website",
+    "ai-developer",
+    "software-engineer",
+    "machine-learning",
+    "web-development",
+    "responsive-design",
+    "modern-css",
+    "javascript",
+    "html5"
   ],
-  "contributors": [
-    "Michael Rose",
-    "Robert Zupko"
-  ],
+  "author": {
+    "name": "Rushabh Bhalgat",
+    "email": "rushabhbhalgat123@gmail.com",
+    "url": "https://rushabhbhalgat.github.io"
+  },
   "license": "MIT",
+  "homepage": "https://rushabhbhalgat.github.io",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RushabhBhalgat/rushabhbhalgat.github.io.git"
+  },
   "bugs": {
-    "url": "https://github.com/academicpages/academicpages.github.io/issues"
-  },
-  "homepage": "https://github.com/academicpages/academicpages.github.io",
-  "engines": {
-    "node": ">= 0.10.0"
-  },
-  "dependencies": {
-    "fitvids": "^2.1.1",
-    "jquery": "^3.7.1",
-    "jquery-smooth-scroll": "^2.2.0",
-    "magnific-popup": "^1.2.0"
+    "url": "https://github.com/RushabhBhalgat/rushabhbhalgat.github.io/issues"
   },
   "devDependencies": {
-    "onchange": "^7.1.0",
-    "uglify-js": "^3.17.4"
+    "live-server": "^1.2.2",
+    "stylelint": "^15.0.0",
+    "eslint": "^8.0.0",
+    "imagemin-cli": "^7.0.0"
   },
-  "scripts": {
-    "uglify": "uglifyjs node_modules/jquery/dist/jquery.min.js node_modules/fitvids/dist/fitvids.min.js node_modules/magnific-popup/dist/jquery.magnific-popup.min.js node_modules/jquery-smooth-scroll/jquery.smooth-scroll.min.js assets/js/plugins/jquery.greedy-navigation.js assets/js/_main.js -c -m -o assets/js/main.min.js",
-    "watch:js": "onchange \"assets/js/**/*.js\" -e \"assets/js/main.min.js\" -- npm run build:js",
-    "build:js": "npm run uglify"
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "engines": {
+    "node": ">=14.0.0"
   }
 }

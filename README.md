@@ -1,75 +1,170 @@
-# Academic Pages
-**Academic Pages is a Github Pages template for academic websites.**
+# Rushabh Bhalgat - Portfolio Website
 
-# Getting Started
+A modern, responsive portfolio website built with HTML, CSS, and JavaScript featuring a professional dark theme with AI/coding aesthetic. This is the official portfolio of Rushabh Bhalgat, hosted at https://rushabhbhalgat.github.io
 
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Click the "Use this template" button in the top right.
-1. On the "New repository" page, enter your repository name as "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and add your content.
-1. Upload any files (like PDFs, .zip files, etc.) to the `files/` directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.
-1. Check status by going to the repository settings, in the "GitHub pages" section
-1. (Optional) Use the Jupyter notebooks or python scripts in the `markdown_generator` folder to generate markdown files for publications and talks from a TSV file.
+## 🚀 Features
 
-See more info at https://academicpages.github.io/
+- **Modern Dark Theme**: Professional dark color scheme with cyan accents
+- **Fully Responsive**: Optimized for all devices and screen sizes
+- **Smooth Animations**: CSS and JavaScript animations with intersection observer
+- **Interactive Particles**: Dynamic particle system background
+- **Typing Effect**: Animated typing text on hero section
+- **Project Filtering**: Interactive project portfolio with category filters
+- **Animated Counters**: Statistics counters with scroll-triggered animations
+- **Skill Bars**: Animated progress bars for skills
+- **Contact Form**: Functional contact form with validation
+- **SEO Optimized**: Meta tags and semantic HTML structure
+- **Performance Optimized**: Lazy loading and efficient animations
 
-## Running locally
+## 🛠️ Technologies Used
 
-When you are initially working your website, it is very useful to be able to preview the changes locally before pushing them to GitHub. To work locally you will need to:
+- **HTML5**: Semantic markup and accessibility features
+- **CSS3**: Modern CSS with custom properties, grid, flexbox
+- **JavaScript (ES6+)**: Modern JavaScript with classes and modules
+- **Font Awesome**: Icons for UI elements
+- **Google Fonts**: Inter and JetBrains Mono fonts
 
-1. Clone the repository and made updates as detailed above.
-1. Make sure you have ruby-dev, bundler, and nodejs installed
-    
-    On most Linux distribution and [Windows Subsystem Linux](https://learn.microsoft.com/en-us/windows/wsl/about) the command is:
-    ```bash
-    sudo apt install ruby-dev ruby-bundler nodejs
-    ```
-    On MacOS the commands are:
-    ```bash
-    brew install ruby
-    brew install node
-    gem install bundler
-    ```
-1. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
-1. Run `jekyll serve -l -H localhost` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change.
+## 📁 Project Structure
 
-If you are running on Linux it may be necessary to install some additional dependencies prior to being able to run locally: `sudo apt install build-essential gcc make`
-
-## Using Docker
-
-Working from a different OS, or just want to avoid installing dependencies? You can use the provided `Dockerfile` to build a container that will run the site for you if you have [Docker](https://www.docker.com/) installed.
-
-Start by build the container:
-
-```bash
-docker build -t jekyll-site .
+```
+modern-portfolio/
+├── index.html              # Main HTML file
+├── css/
+│   └── style.css          # Main stylesheet
+├── js/
+│   ├── app.js             # Main application logic
+│   └── particles.js       # Particle animation system
+├── assets/
+│   ├── placeholder.css    # Asset optimization styles
+│   ├── profile.jpg        # Profile image
+│   ├── wcareers.jpg       # Project screenshot
+│   ├── hireme.jpg         # Project screenshot
+│   ├── prosumely.jpg      # Project screenshot
+│   └── favicon.ico        # Site favicon
+└── README.md              # This file
 ```
 
-Next, run the container:
-```bash
-docker run -p 4000:4000 --rm -v $(pwd):/usr/src/app jekyll-site
+## 🎨 Design Features
+
+### Color Palette
+- Primary: `#64ffda` (Cyan)
+- Secondary: `#1e3a8a` (Blue)
+- Accent: `#f59e0b` (Amber)
+- Background Primary: `#0a0a0a` (Black)
+- Background Secondary: `#111827` (Dark Gray)
+- Text Primary: `#f9fafb` (White)
+
+### Typography
+- Primary Font: Inter (Modern sans-serif)
+- Monospace Font: JetBrains Mono (Code-style font)
+
+## ⚡ Performance Features
+
+- **CSS Custom Properties**: Efficient styling with CSS variables
+- **Intersection Observer**: Performance-optimized scroll animations
+- **Debounced Events**: Optimized scroll and resize handlers
+- **Lazy Loading**: Images load when needed
+- **Minimal Dependencies**: Pure JavaScript implementation
+
+## 📱 Responsive Design
+
+- **Mobile First**: Optimized for mobile devices
+- **Flexible Grid**: CSS Grid and Flexbox layouts
+- **Adaptive Components**: Components adjust to screen size
+- **Touch Friendly**: Large touch targets for mobile
+
+## 🔧 Customization
+
+### Colors
+Update the CSS custom properties in `:root` to change the color scheme:
+
+```css
+:root {
+  --primary-color: #64ffda;
+  --secondary-color: #1e3a8a;
+  --accent-color: #f59e0b;
+  /* ... more properties */
+}
 ```
 
-# Maintenance
+### Content
+1. Update personal information in `index.html`
+2. Replace project details in the projects section
+3. Modify skills and technologies in the skills section
+4. Update social media links
 
-Bug reports and feature requests to the template should be [submitted via GitHub](https://github.com/academicpages/academicpages.github.io/issues/new/choose). For questions concerning how to style the template, please feel free to start a [new discussion on GitHub](https://github.com/academicpages/academicpages.github.io/discussions).
+### Images
+Replace placeholder images in the `assets/` directory:
+- `profile.jpg` - Your profile photo
+- `wcareers.jpg` - Project screenshot
+- `hireme.jpg` - Project screenshot
+- `prosumely.jpg` - Project screenshot
 
-This repository was forked (then detached) by [Stuart Geiger](https://github.com/staeiou) from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License (see LICENSE.md). It is currently being maintained by [Robert Zupko](https://github.com/rjzupkoii) and additional maintainers would be welcomed.
+## 🚀 Deployment
 
-## Bugfixes and enhancements
+### GitHub Pages
+1. Push the code to a GitHub repository
+2. Enable GitHub Pages in repository settings
+3. Select the main branch as the source
 
-If you have bugfixes and enhancements that you would like to submit as a pull request, you will need to [fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) this repository as opposed to using it as a template. This will also allow you to [synchronize your copy](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) of template to your fork as well.
+### Netlify
+1. Connect your repository to Netlify
+2. Deploy with default settings
+3. Configure custom domain if needed
 
-Unfortunately, one logistical issue with a template theme like Academic Pages that makes it a little tricky to get bug fixes and updates to the core theme. If you use this template and customize it, you will probably get merge conflicts if you attempt to synchronize. If you want to save your various .yml configuration files and markdown files, you can delete the repository and fork it again. Or you can manually patch.
+### Vercel
+1. Import project from GitHub
+2. Deploy with zero configuration
+3. Set up custom domain
+
+## 📈 Performance Optimization
+
+- **Critical CSS**: Above-the-fold styles inlined
+- **Font Optimization**: Preconnect to font resources
+- **Image Optimization**: Responsive images with lazy loading
+- **JavaScript**: ES6+ modules with efficient event handling
+
+## 🔍 SEO Features
+
+- **Meta Tags**: Comprehensive meta tag setup
+- **Open Graph**: Social media preview optimization
+- **Structured Data**: Schema.org markup for better search results
+- **Semantic HTML**: Proper heading hierarchy and landmarks
+
+## 📞 Contact Integration
+
+The contact form includes:
+- Form validation
+- Loading states
+- Success/error notifications
+- Email integration ready (connect to your backend)
+
+## 🎯 Browser Support
+
+- Chrome 80+
+- Firefox 75+
+- Safari 13+
+- Edge 80+
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 🤝 Contributing
+
+1. Fork the project
+2. Create a feature branch
+3. Commit your changes
+4. Push to the branch
+5. Open a pull request
+
+## 📞 Contact
+
+**Rushabh Bhalgat**
+- Email: rushabhbhalgat123@gmail.com
+- LinkedIn: [rushabh-bhalgat](https://www.linkedin.com/in/rushabh-bhalgat/)
+- GitHub: [RushabhBhalgat](https://github.com/RushabhBhalgat)
 
 ---
-<div align="center">
-    
-![pages-build-deployment](https://github.com/academicpages/academicpages.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)
-[![GitHub contributors](https://img.shields.io/github/contributors/academicpages/academicpages.github.io.svg)](https://github.com/academicpages/academicpages.github.io/graphs/contributors)
-[![GitHub release](https://img.shields.io/github/v/release/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io/releases/latest)
-[![GitHub license](https://img.shields.io/github/license/academicpages/academicpages.github.io?color=blue)](https://github.com/academicpages/academicpages.github.io/blob/master/LICENSE)
 
-[![GitHub stars](https://img.shields.io/github/stars/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io)
-[![GitHub forks](https://img.shields.io/github/forks/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io/fork)
-</div>
+⭐ Star this repository if you found it helpful!

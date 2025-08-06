@@ -1,0 +1,83 @@
+/* Responsive Images and Assets */
+
+/* This file contains CSS for handling responsive images and asset optimization */
+
+/* Image optimization */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Lazy loading placeholder */
+.img-placeholder {
+  background: linear-gradient(90deg, var(--bg-tertiary) 25%, var(--bg-secondary) 50%, var(--bg-tertiary) 75%);
+  background-size: 200% 100%;
+  animation: loading 2s infinite;
+  min-height: 200px;
+  border-radius: var(--border-radius);
+}
+
+@keyframes loading {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* Profile image placeholder (if no image is available) */
+.avatar-image::before {
+  content: 'RB';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  font-family: var(--font-mono);
+  z-index: 1;
+}
+
+.avatar-image img {
+  position: relative;
+  z-index: 2;
+}
+
+/* Project images placeholder */
+.project-image::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, var(--bg-tertiary), var(--bg-secondary));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted);
+  font-size: 2rem;
+  z-index: 1;
+}
+
+.project-image img {
+  position: relative;
+  z-index: 2;
+}
+
+/* Icon replacements for missing brand icons */
+.tech-tag::before {
+  margin-right: 0.5rem;
+}
+
+.tech-tag[data-tech="Python"]::before { content: '🐍'; }
+.tech-tag[data-tech="JavaScript"]::before { content: '⚡'; }
+.tech-tag[data-tech="React"]::before { content: '⚛️'; }
+.tech-tag[data-tech="Node.js"]::before { content: '🟢'; }
+.tech-tag[data-tech="MongoDB"]::before { content: '🍃'; }
+.tech-tag[data-tech="Django"]::before { content: '🎸'; }
+.tech-tag[data-tech="FastAPI"]::before { content: '🚀'; }
+.tech-tag[data-tech="AI/ML"]::before { content: '🤖'; }
+.tech-tag[data-tech="TensorFlow"]::before { content: '🧠'; }
+.tech-tag[data-tech="Docker"]::before { content: '🐳'; }
+.tech-tag[data-tech="AWS"]::before { content: '☁️'; }
+.tech-tag[data-tech="Git"]::before { content: '📝'; }
