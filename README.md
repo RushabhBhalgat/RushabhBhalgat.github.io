@@ -5,13 +5,15 @@ A modern, responsive portfolio website built with HTML, CSS, and JavaScript feat
 ## 🚀 Quick Start
 
 1. **Replace Images**: Update the placeholder images in the `assets/` folder:
+
    - `profile.jpg` - Your professional profile photo
    - `wcareers.jpg` - Screenshot of your WCareers project
-   - `hireme.jpg` - Screenshot of your HireMe project  
+   - `hireme.jpg` - Screenshot of your HireMe project
    - `prosumely.jpg` - Screenshot of your Prosumely platform
    - `favicon.ico` - Your website favicon
 
 2. **Update Content**: Modify the content in `index.html` to match your:
+
    - Personal information and bio
    - Skills and technologies
    - Project details and links
@@ -64,6 +66,7 @@ modern-portfolio/
 ## 🎨 Design Features
 
 ### Color Palette
+
 - Primary: `#64ffda` (Cyan)
 - Secondary: `#1e3a8a` (Blue)
 - Accent: `#f59e0b` (Amber)
@@ -72,6 +75,7 @@ modern-portfolio/
 - Text Primary: `#f9fafb` (White)
 
 ### Typography
+
 - Primary Font: Inter (Modern sans-serif)
 - Monospace Font: JetBrains Mono (Code-style font)
 
@@ -93,6 +97,7 @@ modern-portfolio/
 ## 🔧 Customization
 
 ### Colors
+
 Update the CSS custom properties in `:root` to change the color scheme:
 
 ```css
@@ -105,13 +110,16 @@ Update the CSS custom properties in `:root` to change the color scheme:
 ```
 
 ### Content
+
 1. Update personal information in `index.html`
 2. Replace project details in the projects section
 3. Modify skills and technologies in the skills section
 4. Update social media links
 
 ### Images
+
 Replace placeholder images in the `assets/` directory:
+
 - `profile.jpg` - Your profile photo
 - `wcareers.jpg` - Project screenshot
 - `hireme.jpg` - Project screenshot
@@ -120,16 +128,19 @@ Replace placeholder images in the `assets/` directory:
 ## 🚀 Deployment
 
 ### GitHub Pages
+
 1. Push the code to a GitHub repository
 2. Enable GitHub Pages in repository settings
 3. Select the main branch as the source
 
 ### Netlify
+
 1. Connect your repository to Netlify
 2. Deploy with default settings
 3. Configure custom domain if needed
 
 ### Vercel
+
 1. Import project from GitHub
 2. Deploy with zero configuration
 3. Set up custom domain
@@ -151,6 +162,7 @@ Replace placeholder images in the `assets/` directory:
 ## 📞 Contact Integration
 
 The contact form includes:
+
 - Form validation
 - Loading states
 - Success/error notifications
@@ -178,6 +190,7 @@ This project is open source and available under the [MIT License](LICENSE).
 ## 📞 Contact
 
 **Rushabh Bhalgat**
+
 - Email: rushabhbhalgat123@gmail.com
 - LinkedIn: [rushabh-bhalgat](https://www.linkedin.com/in/rushabh-bhalgat/)
 - GitHub: [RushabhBhalgat](https://github.com/RushabhBhalgat)
