@@ -1,0 +1,69 @@
+{
+  "name": "Rushabh Bhalgat - AI & Software Developer Portfolio",
+  "short_name": "Rushabh Portfolio",
+  "description": "Portfolio showcasing AI projects, software development expertise, and innovative solutions by Rushabh Bhalgat",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#64ffda",
+  "orientation": "portrait-primary",
+  "categories": ["portfolio", "developer", "ai", "software"],
+  "lang": "en-US",
+  "dir": "ltr",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "assets/favicon.ico",
+      "sizes": "16x16 32x32 48x48",
+      "type": "image/x-icon",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "assets/profile.jpg",
+      "sizes": "1280x720",
+      "type": "image/jpeg",
+      "platform": "wide",
+      "label": "Rushabh Bhalgat Portfolio Homepage"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "About",
+      "short_name": "About",
+      "description": "Learn more about Rushabh Bhalgat",
+      "url": "/#about",
+      "icons": [
+        {
+          "src": "assets/favicon.ico",
+          "sizes": "32x32"
+        }
+      ]
+    },
+    {
+      "name": "Projects",
+      "short_name": "Projects",
+      "description": "View AI and software development projects",
+      "url": "/#projects",
+      "icons": [
+        {
+          "src": "assets/favicon.ico",
+          "sizes": "32x32"
+        }
+      ]
+    },
+    {
+      "name": "Contact",
+      "short_name": "Contact",
+      "description": "Get in touch with Rushabh Bhalgat",
+      "url": "/#contact",
+      "icons": [
+        {
+          "src": "assets/favicon.ico",
+          "sizes": "32x32"
+        }
+      ]
+    }
+  ]
+}

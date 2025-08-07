@@ -71,8 +71,20 @@ function initializeNavigation() {
   // Smooth scroll for navigation links
   navLinks.forEach((link) => {
     link.addEventListener("click", (e) => {
+      const href = link.getAttribute("href");
+
+      // Check if it's an external link (contains .html or starts with http)
+      if (href.includes(".html") || href.startsWith("http")) {
+        // Close mobile menu if open for external links
+        if (navMenu.classList.contains("active")) {
+          toggleMobileMenu();
+        }
+        // Let the default behavior handle external links
+        return;
+      }
+
       e.preventDefault();
-      const targetId = link.getAttribute("href").substring(1);
+      const targetId = href.substring(1);
       const targetSection = document.getElementById(targetId);
 
       if (targetSection) {
@@ -794,6 +806,71 @@ function openArticle(articleId) {
                             <span class="tag">Payload CMS</span>
                             <span class="tag">Vercel</span>
                             <span class="tag">SEO</span>
+                        </div>
+                    </div>
+                </div>
+            `;
+      break;
+
+    case "gpt-5-revolutionary-ai-breakthrough":
+      content = `
+                <div class="article-modal-content">
+                    <img src="assets/articles/sam-altman-launches-openai-gpt-5-model-rushabh-bhalgat.png" alt="GPT-5 OpenAI Revolutionary AI Breakthrough" class="article-modal-image">
+                    <div class="article-modal-header">
+                        <h2>GPT-5: OpenAI's Revolutionary AI Breakthrough - Complete Analysis 2025</h2>
+                        <div class="article-modal-meta">
+                            <span><i class="fas fa-calendar"></i> August 7, 2025</span>
+                            <span><i class="fas fa-clock"></i> 8 min read</span>
+                            <span><i class="fas fa-eye"></i> 2.4k views</span>
+                        </div>
+                    </div>
+                    <div class="article-modal-body">
+                        <p><strong>Breaking News:</strong> OpenAI has officially launched GPT-5, claiming it's their "smartest, fastest, most useful model yet." But is this truly the next-level breakthrough in artificial intelligence, or sophisticated marketing around evolutionary improvements?</p>
+                        
+                        <h3>🚀 The Technical Revolution: What Makes GPT-5 Different</h3>
+                        <p>GPT-5 represents a fundamental architectural shift from OpenAI's previous approach. Unlike GPT-4's fragmented ecosystem, <strong>GPT-5 introduces a unified architecture</strong> that automatically selects the optimal cognitive approach for any task.</p>
+                        
+                        <h4>Core Technical Specifications:</h4>
+                        <ul>
+                            <li><strong>GPT-5 (Flagship):</strong> 1.7 trillion parameters optimized for complex reasoning</li>
+                            <li><strong>GPT-5-mini:</strong> 400 billion parameters for cost-sensitive applications</li>
+                            <li><strong>GPT-5-nano:</strong> 50 billion parameters for ultra-low latency responses</li>
+                            <li><strong>GPT-5-chat:</strong> Enterprise-optimized for multimodal conversations</li>
+                        </ul>
+
+                        <h3>📊 Benchmark Performance: The Numbers</h3>
+                        <ul>
+                            <li><strong>GPQA Diamond:</strong> 88.4% (vs 70-80% previous best)</li>
+                            <li><strong>AIME 2025 Math:</strong> 100% (vs 83.7% GPT-4)</li>
+                            <li><strong>SWE-Bench Verified:</strong> 74.9% (vs ~60% baseline)</li>
+                            <li><strong>Hallucination Reduction:</strong> 26% lower than GPT-4o</li>
+                        </ul>
+
+                        <h3>🏢 Enterprise Adoption</h3>
+                        <p>Major organizations including <strong>BNY Mellon, California State University, Figma, Intercom, and T-Mobile</strong> have already integrated GPT-5 into their workflows, reporting fundamental improvements in productivity and capability.</p>
+
+                        <h3>🤖 The AGI Question</h3>
+                        <p>GPT-5 shows remarkable capabilities in:</p>
+                        <ul>
+                            <li>Unified intelligence across reasoning, conversation, and coding</li>
+                            <li>Agent-like autonomy for complex workflows</li>
+                            <li>Domain expert-level performance in specialized fields</li>
+                            <li>Enhanced safety with "safe completions" approach</li>
+                        </ul>
+
+                        <h3>🎯 The Verdict</h3>
+                        <p><strong>GPT-5 represents a genuine "next level" advancement in AI capabilities.</strong> While it falls short of true AGI, it's architecturally different in ways that enable new categories of applications and workflows. For organizations and developers, GPT-5 offers immediate, practical value that justifies early adoption.</p>
+
+                        <p><strong>Bottom Line:</strong> GPT-5 is undeniably "next level" by today's standards, setting a new bar for what AI can accomplish in the real world while providing a compelling glimpse of the AGI future.</p>
+                    </div>
+                    <div class="article-modal-footer">
+                        <div class="article-tags">
+                            <span class="tag">GPT-5</span>
+                            <span class="tag">OpenAI</span>
+                            <span class="tag">AI Analysis</span>
+                            <span class="tag">AGI</span>
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">Artificial Intelligence</span>
                         </div>
                     </div>
                 </div>

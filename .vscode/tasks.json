@@ -1,0 +1,23 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Serve Portfolio Website",
+      "type": "shell",
+      "command": "python",
+      "args": ["-m", "http.server", "8000"],
+      "group": "build",
+      "isBackground": true,
+      "problemMatcher": [],
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "new"
+      },
+      "options": {
+        "cwd": "${workspaceFolder}"
+      }
+    }
+  ]
+}

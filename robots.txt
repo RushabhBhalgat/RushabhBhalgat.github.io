@@ -1,0 +1,95 @@
+# Robots.txt for Rushabh Bhalgat Portfolio
+# https://rushabhbhalgat.github.io/robots.txt
+
+# Allow all search engines and crawlers
+User-agent: *
+Allow: /
+
+# Specific permissions for major search engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 2
+
+# Priority pages for indexing
+# High-priority article pages
+Allow: /gpt-5-revolutionary-ai-breakthrough.html
+
+User-agent: DuckDuckBot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 2
+
+User-agent: YandexBot
+Allow: /
+Crawl-delay: 2
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+# Block specific paths if needed (currently none)
+# Disallow: /private/
+# Disallow: /temp/
+
+# Sitemap location
+Sitemap: https://rushabhbhalgat.github.io/sitemap.xml
+
+# Additional information
+# Website: https://rushabhbhalgat.github.io
+# Owner: Rushabh Bhalgat
+# Contact: rushabhbhalgat123@gmail.com
+# Purpose: Professional AI Developer Portfolio
+
+# Request-rate limits (optional)
+Request-rate: 1/1s
+
+# Visit-time restrictions (optional - allow 24/7)
+Visit-time: 0000-2359
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+# Block common directories (if any existed)
+# Disallow: /admin/
+# Disallow: /private/
+# Disallow: /temp/
+
+# Allow CSS and JS files
+Allow: /css/
+Allow: /js/
+Allow: /assets/
+
+# Host (optional but recommended)
+Host: https://rushabhbhalgat.github.io

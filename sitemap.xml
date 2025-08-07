@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+    
+    <!-- Main Homepage - Highest Priority -->
+    <url>
+        <loc>https://rushabhbhalgat.github.io/</loc>
+        <lastmod>2025-08-07T00:00:00+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+        <image:image>
+            <image:loc>https://rushabhbhalgat.github.io/assets/profile.jpg</image:loc>
+            <image:title>Rushabh Bhalgat - AI Developer & Software Engineer</image:title>
+            <image:caption>Professional portfolio of Rushabh Bhalgat specializing in AI development and software engineering</image:caption>
+        </image:image>
+    </url>
+    
+    
+    <!-- Section Pages - High Priority for SEO -->
+    <url>
+        <loc>https://rushabhbhalgat.github.io/#home</loc>
+        <lastmod>2025-08-07T00:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <url>
+        <loc>https://rushabhbhalgat.github.io/#about</loc>
+        <lastmod>2025-08-07T00:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://rushabhbhalgat.github.io/#experience</loc>
+        <lastmod>2025-08-07T00:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://rushabhbhalgat.github.io/#projects</loc>
+        <lastmod>2025-08-07T00:00:00+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://rushabhbhalgat.github.io/assets/wcareers.jpg</image:loc>
+            <image:title>WCareers - AI-Powered Employment Platform</image:title>
+            <image:caption>AI-powered career development platform built for Government of Punjab</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://rushabhbhalgat.github.io/assets/hireme.jpg</image:loc>
+            <image:title>HireMe - Smart India Hackathon Project</image:title>
+            <image:caption>AI-driven voice analysis and assessment platform</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://rushabhbhalgat.github.io/assets/prosumely.jpg</image:loc>
+            <image:title>Prosumely - Resume & LinkedIn Optimization Platform</image:title>
+            <image:caption>Global platform serving 500+ clients across 20+ countries</image:caption>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://rushabhbhalgat.github.io/#skills</loc>
+        <lastmod>2025-08-07T00:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://rushabhbhalgat.github.io/#certifications</loc>
+        <lastmod>2025-08-07T00:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- Articles Landing Page -->
+    <url>
+        <loc>https://rushabhbhalgat.github.io/articles.html</loc>
+        <lastmod>2025-08-07T00:00:00+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://rushabhbhalgat.github.io/assets/articles/sam-altman-launches-openai-gpt-5-model-rushabh-bhalgat.png</image:loc>
+            <image:title>GPT-5: OpenAI's Revolutionary AI Breakthrough - Complete Analysis 2025</image:title>
+            <image:caption>Deep dive into GPT-5's capabilities, benchmarks, and real-world impact by AI Developer Rushabh Bhalgat</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://rushabhbhalgat.github.io/assets/articles/computer-vision-opencv.jpg</image:loc>
+            <image:title>Computer Vision with OpenCV Tutorial</image:title>
+            <image:caption>Technical article on computer vision implementation</image:caption>
+        </image:image>
+    </url>
+    
+    <!-- Article-specific URLs for better indexing -->
+    <url>
+        <loc>https://rushabhbhalgat.github.io/articles/gpt-5-revolutionary-ai-breakthrough.html</loc>
+        <lastmod>2025-08-07T00:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://rushabhbhalgat.github.io/assets/articles/sam-altman-launches-openai-gpt-5-model-rushabh-bhalgat.png</image:loc>
+            <image:title>GPT-5 OpenAI Revolutionary AI Breakthrough Analysis</image:title>
+            <image:caption>Comprehensive analysis of GPT-5's capabilities and real-world impact</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://rushabhbhalgat.github.io/assets/articles/gpt-5-revolutionary-ai-breakthrough/gpt-5-technical-architecture-comparison.svg</image:loc>
+            <image:title>AIME 2025 Competition Math Benchmark Results</image:title>
+            <image:caption>GPT-5 vs OpenAI o3 vs GPT-4o performance comparison in mathematical reasoning</image:caption>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://rushabhbhalgat.github.io/#articles/gpt-5-revolutionary-ai-breakthrough</loc>
+        <lastmod>2025-08-07T00:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://rushabhbhalgat.github.io/assets/articles/sam-altman-launches-openai-gpt-5-model-rushabh-bhalgat.png</image:loc>
+            <image:title>GPT-5: OpenAI's Revolutionary AI Breakthrough - Complete Analysis 2025</image:title>
+            <image:caption>Comprehensive analysis of GPT-5's technical specifications, performance benchmarks, and enterprise adoption by AI expert Rushabh Bhalgat</image:caption>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://rushabhbhalgat.github.io/#contact</loc>
+        <lastmod>2025-08-07T00:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Important External Resources -->
+    <url>
+        <loc>https://rushabhbhalgat.github.io/manifest.json</loc>
+        <lastmod>2025-08-07T00:00:00+00:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    
+    <!-- Project-specific URLs for better indexing -->
+    <url>
+        <loc>https://rushabhbhalgat.github.io/#projects/wcareers</loc>
+        <lastmod>2025-08-07T00:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://rushabhbhalgat.github.io/#projects/hireme</loc>
+        <lastmod>2025-08-07T00:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://rushabhbhalgat.github.io/#projects/prosumely</loc>
+        <lastmod>2025-08-07T00:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- Individual Article Pages -->
+    <url>
+        <loc>https://rushabhbhalgat.github.io/articles/gpt-5-revolutionary-ai-breakthrough.html</loc>
+        <lastmod>2025-08-07T00:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://rushabhbhalgat.github.io/assets/articles/sam-altman-launches-openai-gpt-5-model-rushabh-bhalgat.png</image:loc>
+            <image:title>GPT-5: OpenAI's Revolutionary AI Breakthrough - Complete Analysis 2025</image:title>
+            <image:caption>Deep dive into GPT-5's capabilities, benchmarks, and real-world impact by AI Developer Rushabh Bhalgat</image:caption>
+        </image:image>
+    </url>
+    
+</urlset>
