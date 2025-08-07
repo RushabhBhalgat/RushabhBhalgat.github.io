@@ -14,7 +14,7 @@
         <priority>1.0</priority>
         <image:image>
             <image:loc>https://rushabhbhalgat.github.io/assets/profile.jpg</image:loc>
-            <image:title>Rushabh Bhalgat - AI Developer & Software Engineer</image:title>
+            <image:title>Rushabh Bhalgat - AI Developer &amp; Software Engineer</image:title>
             <image:caption>Professional portfolio of Rushabh Bhalgat specializing in AI development and software engineering</image:caption>
         </image:image>
     </url>
@@ -59,7 +59,7 @@
         </image:image>
         <image:image>
             <image:loc>https://rushabhbhalgat.github.io/assets/prosumely.jpg</image:loc>
-            <image:title>Prosumely - Resume & LinkedIn Optimization Platform</image:title>
+            <image:title>Prosumely - Resume &amp; LinkedIn Optimization Platform</image:title>
             <image:caption>Global platform serving 500+ clients across 20+ countries</image:caption>
         </image:image>
     </url>
