@@ -107,21 +107,40 @@ function toggleMobileMenu() {
   navMenu.classList.toggle("active");
   navToggle.classList.toggle("active");
 
-  // Animate hamburger bars
-  const bars = navToggle.querySelectorAll(".bar");
-  bars.forEach((bar, index) => {
-    if (navToggle.classList.contains("active")) {
-      if (index === 0)
-        bar.style.transform = "rotate(45deg) translate(5px, 5px)";
-      if (index === 1) bar.style.opacity = "0";
-      if (index === 2)
-        bar.style.transform = "rotate(-45deg) translate(7px, -6px)";
-    } else {
-      bar.style.transform = "";
-      bar.style.opacity = "";
-    }
-  });
+  // Prevent body scroll when menu is open
+  if (navMenu.classList.contains("active")) {
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = "";
+  }
 }
+
+// Close mobile menu when clicking outside
+document.addEventListener("click", (e) => {
+  if (
+    navMenu.classList.contains("active") &&
+    !navMenu.contains(e.target) &&
+    !navToggle.contains(e.target)
+  ) {
+    toggleMobileMenu();
+  }
+});
+
+// Close mobile menu on escape key
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && navMenu.classList.contains("active")) {
+    toggleMobileMenu();
+  }
+});
+
+// Close mobile menu on window resize to desktop
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 768 && navMenu.classList.contains("active")) {
+    navMenu.classList.remove("active");
+    navToggle.classList.remove("active");
+    document.body.style.overflow = "";
+  }
+});
 
 function scrollToSection(section) {
   section.scrollIntoView({

@@ -71,6 +71,8 @@ body {
   color: var(--text-primary);
   line-height: 1.6;
   overflow-x: hidden;
+  word-wrap: break-word;
+  -webkit-text-size-adjust: 100%;
 }
 
 /* Utility Classes */
@@ -78,6 +80,23 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: var(--container-padding);
+}
+
+/* Responsive utilities */
+.responsive-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.text-responsive {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+.no-scroll {
+  overflow: hidden;
 }
 
 .btn-primary,
@@ -291,6 +310,8 @@ body {
   border-radius: var(--border-radius-sm);
   transition: all var(--transition-normal);
   position: relative;
+  min-height: 44px; /* Minimum touch target size */
+  touch-action: manipulation; /* Optimize for touch */
 }
 
 .nav-link:hover,
@@ -307,6 +328,18 @@ body {
   display: none;
   flex-direction: column;
   cursor: pointer;
+  padding: 8px;
+  min-width: 44px; /* Minimum touch target size */
+  min-height: 44px;
+  justify-content: center;
+  align-items: center;
+  touch-action: manipulation;
+  border-radius: var(--border-radius-sm);
+  transition: background-color var(--transition-fast);
+}
+
+.nav-toggle:hover {
+  background-color: var(--glow-color);
 }
 
 .nav-toggle .bar {
@@ -1592,23 +1625,55 @@ body {
 
   .nav-menu {
     position: fixed;
-    top: 100%;
+    top: -100vh;
     left: 0;
     width: 100%;
+    height: calc(100vh - 80px);
     background: var(--bg-primary);
     border-top: 1px solid var(--border-color);
     flex-direction: column;
     gap: 0;
     padding: 1rem 0;
     transition: top var(--transition-normal);
+    overflow-y: auto;
+    z-index: 999;
   }
 
   .nav-menu.active {
-    top: 100%;
+    top: 80px;
   }
 
   .nav-toggle {
     display: flex;
+    z-index: 1001;
+  }
+
+  .nav-toggle.active .bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .nav-toggle.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .nav-toggle.active .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+  }
+
+  .nav-link {
+    padding: 1rem 2rem;
+    border-bottom: 1px solid var(--border-color);
+    justify-content: flex-start;
+    font-size: 1.1rem;
+  }
+
+  .nav-link:last-child {
+    border-bottom: none;
+  }
+
+  .nav-link:hover {
+    background: var(--bg-secondary);
+    border-left: 4px solid var(--primary-color);
   }
 
   .hero-content {
@@ -1671,20 +1736,75 @@ body {
 }
 
 @media (max-width: 480px) {
+  :root {
+    --container-padding: 0 0.75rem;
+  }
+
+  .nav-container {
+    padding: 0.75rem 1rem;
+  }
+
+  .nav-link {
+    padding: 0.875rem 1rem;
+    font-size: 1rem;
+  }
+
   .hero-title .title-name {
-    font-size: 2rem;
+    font-size: 1.75rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
   }
 
   .section-title {
-    font-size: 2rem;
+    font-size: 1.75rem;
+  }
+
+  .section-subtitle {
+    font-size: 1rem;
+    padding: 0 0.5rem;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    padding: 0.75rem 1.25rem;
+    font-size: 0.875rem;
   }
 
   .about-stats {
     grid-template-columns: 1fr;
+    gap: 1rem;
   }
 
   .timeline-item {
     padding-left: 40px;
+  }
+
+  .timeline-marker {
+    left: 3px;
+    width: 12px;
+    height: 12px;
+  }
+
+  .timeline::before {
+    left: 9px;
+    width: 2px;
+  }
+
+  .project-card,
+  .skill-card {
+    padding: 1rem;
+  }
+
+  .contact-form {
+    padding: 1.5rem;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    padding: 0.75rem;
+    font-size: 0.9rem;
   }
 
   .projects-filter {
@@ -1694,6 +1814,34 @@ body {
 
   .tools-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Tablet Responsive Design */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .nav-container {
+    padding: 1rem 1.5rem;
+  }
+
+  .hero-content {
+    gap: 2rem;
+  }
+
+  .about-content {
+    gap: 2rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-content {
+    gap: 2rem;
   }
 }
 
@@ -2821,5 +2969,46 @@ a:focus {
   .benchmark-table td {
     padding: 0.5rem;
     font-size: 0.85rem;
+  }
+}
+
+/* Mobile Landscape Orientation */
+@media (max-height: 500px) and (orientation: landscape) {
+  .nav-menu {
+    height: calc(100vh - 60px);
+    padding: 0.5rem 0;
+  }
+
+  .nav-menu.active {
+    top: 60px;
+  }
+
+  .nav-link {
+    padding: 0.5rem 2rem;
+    font-size: 0.9rem;
+  }
+
+  .nav-container {
+    padding: 0.5rem 1rem;
+  }
+
+  .hero {
+    min-height: 90vh;
+  }
+}
+
+/* Ensure navbar is always on top */
+.navbar {
+  z-index: 1000;
+}
+
+.nav-menu.active {
+  z-index: 999;
+}
+
+/* High DPI Display Support */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .nav-toggle .bar {
+    height: 2px;
   }
 }
