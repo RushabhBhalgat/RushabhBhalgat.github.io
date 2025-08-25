@@ -199,7 +199,6 @@ function initializeTypingEffect() {
   const phrases = [
     "AI Developer",
     "Software Engineer",
-    "Founder of Prosumely",
     "Machine Learning Expert",
     "Full Stack Developer",
     "Problem Solver",
