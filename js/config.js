@@ -113,7 +113,7 @@ window.portfolioConfig = {
       description:
         "Smart India Hackathon project featuring AI-driven voice analysis, game-based assessments, and personalized development plans for comprehensive candidate evaluation.",
       technologies: ["Python", "Django", "React", "SQLite", "AI/ML"],
-      image: "assets/hireme.jpg",
+      image: "assets/hireme.png",
       github: "https://github.com/RushabhBhalgat/HireMe-Smart-India-Hackathon",
       live: null,
     },

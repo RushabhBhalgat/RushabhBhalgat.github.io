@@ -461,7 +461,7 @@ function openProjectModal(projectId) {
     wcareers: {
       title: "WCareers - AI-Powered Career Platform",
       description:
-        "A comprehensive career development platform powered by AI, designed to help professionals enhance their skills and advance their careers.",
+        "A comprehensive career development platform powered by AI, designed for the Government of Punjab to revolutionize employment services. Features intelligent job matching, LLM-powered personalized learning paths, adaptive assessments, and AI-driven mock interviews with real-time performance analytics and career guidance.",
       features: [
         "AI-powered resume enhancements with smart suggestions",
         "Mock interviews with AI-driven feedback on tone and confidence",
@@ -486,7 +486,7 @@ function openProjectModal(projectId) {
     hireme: {
       title: "HireMe - Smart Assessment Platform",
       description:
-        "Innovative assessment platform developed for Smart India Hackathon, featuring AI-driven candidate evaluation through voice analysis and game-based assessments.",
+        "Smart India Hackathon Grand Finalist project featuring revolutionary AI-driven candidate assessment through advanced voice analysis, game-based cognitive evaluations, and comprehensive skill profiling with personalized development recommendations for enhanced recruitment processes.",
       features: [
         "AI-driven voice analysis for evaluating soft skills and confidence",
         "Game-based assessments for cognitive abilities and critical thinking",
@@ -508,6 +508,78 @@ function openProjectModal(projectId) {
       ],
       github: "https://github.com/RushabhBhalgat/HireMe-Smart-India-Hackathon",
       images: ["assets/hireme-1.jpg", "assets/hireme-2.jpg"],
+    },
+    emotion: {
+      title: "Emotion Detection Using CNN - Deep Learning Project",
+      description:
+        "A comprehensive emotion recognition system built with Convolutional Neural Networks that analyzes facial expressions to classify human emotions in real-time. This project demonstrates advanced computer vision techniques and deep learning architectures for accurate emotion classification with practical applications in human-computer interaction, mental health monitoring, and user experience analysis.",
+      features: [
+        "Real-time emotion detection from live webcam feed with instant classification",
+        "Custom CNN architecture optimized for facial emotion recognition with 85%+ accuracy",
+        "Support for 7 primary emotion categories: Happy, Sad, Angry, Surprised, Fear, Disgust, Neutral",
+        "Advanced face detection using OpenCV Haar Cascades with preprocessing pipeline",
+        "Data augmentation techniques including rotation, zoom, and brightness adjustment for robust training",
+        "Interactive GUI application with live emotion probability visualization",
+        "Comprehensive model evaluation with confusion matrix and accuracy metrics",
+        "Batch processing capabilities for analyzing multiple images or video files",
+        "Model export functionality for deployment in production environments",
+        "Performance optimization for both CPU and GPU inference with TensorFlow",
+        "Detailed logging and error handling for reliable operation",
+        "Configurable confidence thresholds for emotion classification",
+      ],
+      technologies: [
+        "Python",
+        "TensorFlow 2.x",
+        "Keras",
+        "OpenCV",
+        "NumPy",
+        "Matplotlib",
+        "Pandas",
+        "Scikit-learn",
+        "CNN Architecture",
+        "Computer Vision",
+        "Deep Learning",
+        "Image Processing",
+      ],
+      github: "https://github.com/RushabhBhalgat/Emotion-Detection-Using-CNN",
+      images: ["assets/emotion_detection_using_cnn.png"],
+    },
+    attendance: {
+      title: "Smart Attendance Management System - IoT & Computer Vision",
+      description:
+        "An intelligent attendance management system leveraging computer vision and IoT technologies for automated attendance tracking. Built with OpenCV for face recognition and Django for web-based management, this system provides a contactless, efficient solution for educational institutions and corporate environments with real-time analytics and comprehensive reporting capabilities.",
+      features: [
+        "Real-time face detection and recognition using OpenCV Haar Cascades and LBPH algorithms",
+        "Contactless attendance marking with high accuracy face matching (95%+ recognition rate)",
+        "Raspberry Pi 4 deployment for edge computing and standalone operation",
+        "Django-powered web dashboard with comprehensive attendance analytics and reporting",
+        "SQLite database with optimized queries for fast data retrieval and storage",
+        "Multi-user face enrollment system with quality validation and duplicate detection",
+        "Automated attendance reports generation with export to CSV/PDF formats",
+        "Real-time attendance monitoring with live camera feed and status updates",
+        "Admin panel for user management, attendance records, and system configuration",
+        "Attendance statistics with graphical charts and trend analysis",
+        "Email notifications for attendance alerts and daily/weekly summaries",
+        "Backup and restore functionality for attendance data and user profiles",
+        "Mobile-responsive web interface for access from any device",
+        "Integration with existing HR systems through REST API endpoints",
+      ],
+      technologies: [
+        "Python",
+        "OpenCV",
+        "Django",
+        "SQLite",
+        "Raspberry Pi 4",
+        "HTML5/CSS3",
+        "JavaScript",
+        "Bootstrap",
+        "Computer Vision",
+        "IoT",
+        "REST API",
+        "Chart.js",
+      ],
+      github: "#",
+      images: ["assets/attendance_management_system.jpg"],
     },
   };
 

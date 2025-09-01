@@ -32,6 +32,7 @@
 ## ✨ Features
 
 ### 🎯 **Core Features**
+
 - **Modern Dark Theme** with professional AI/tech aesthetic
 - **Fully Responsive** design optimized for all devices
 - **High Performance** with 95+ PageSpeed Insights score
@@ -39,6 +40,7 @@
 - **Accessibility Compliant** with WCAG 2.1 guidelines
 
 ### 🎨 **Interactive Elements**
+
 - **Animated Particle System** with dynamic background effects
 - **Typing Animation** with rotating professional titles
 - **Smooth Scroll Animations** triggered by intersection observer
@@ -47,6 +49,7 @@
 - **Progressive Skill Bars** with percentage indicators
 
 ### 📊 **Content Sections**
+
 - **Hero Section** with professional introduction
 - **About Me** with personal story and statistics
 - **Education** with academic background and coursework
@@ -57,6 +60,7 @@
 - **Contact Form** with validation and success notifications
 
 ### 🔧 **Technical Features**
+
 - **Critical CSS Inlining** for faster initial render
 - **Lazy Loading** for images and non-critical resources
 - **Service Worker Ready** for offline functionality
@@ -69,6 +73,7 @@
 ## 🚀 Quick Start
 
 ### Prerequisites
+
 - Modern web browser (Chrome 80+, Firefox 75+, Safari 13+, Edge 80+)
 - Text editor (VS Code recommended)
 - Git for version control
@@ -76,19 +81,21 @@
 ### Installation
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/RushabhBhalgat/rushabhbhalgat.github.io.git
    cd rushabhbhalgat.github.io
    ```
 
 2. **Open in browser**
+
    ```bash
    # Using Python (if installed)
    python -m http.server 8000
-   
+
    # Using Node.js (if installed)
    npx serve .
-   
+
    # Or simply open index.html in your browser
    ```
 
@@ -99,21 +106,23 @@
    - Update contact information and social links
 
 ### 🖼️ **Image Requirements**
+
 Replace these placeholder images in the `assets/` folder:
 
-| File | Dimensions | Purpose |
-|------|------------|---------|
-| `profile.jpg` | 300x300px | Hero section profile image |
-| `wcareers.jpg` | 600x400px | WCareers project screenshot |
-| `hireme.jpg` | 600x400px | HireMe project screenshot |
-| `prosumely.jpg` | 600x400px | Prosumely platform screenshot |
-| `favicon.ico` | 32x32px | Browser tab icon |
+| File            | Dimensions | Purpose                       |
+| --------------- | ---------- | ----------------------------- |
+| `profile.jpg`   | 300x300px  | Hero section profile image    |
+| `wcareers.jpg`  | 600x400px  | WCareers project screenshot   |
+| `hireme.png`    | 600x400px  | HireMe project screenshot     |
+| `prosumely.jpg` | 600x400px  | Prosumely platform screenshot |
+| `favicon.ico`   | 32x32px    | Browser tab icon              |
 
 ---
 
 ## 🛠️ Tech Stack
 
 ### **Frontend Technologies**
+
 - **HTML5** - Semantic markup with accessibility features
 - **CSS3** - Modern CSS with custom properties, Grid, and Flexbox
 - **JavaScript (ES6+)** - Vanilla JS with modern features
@@ -121,6 +130,7 @@ Replace these placeholder images in the `assets/` folder:
 - **Google Fonts** - Inter and JetBrains Mono typography
 
 ### **Performance & SEO**
+
 - **Critical CSS** - Inlined above-the-fold styles
 - **Resource Preloading** - Strategic asset loading
 - **Schema.org Markup** - Structured data for search engines
@@ -128,6 +138,7 @@ Replace these placeholder images in the `assets/` folder:
 - **Meta Tags** - Comprehensive SEO metadata
 
 ### **Development Tools**
+
 - **Git** - Version control
 - **GitHub Pages** - Hosting and deployment
 - **VS Code** - Recommended development environment
@@ -153,7 +164,7 @@ rushabhbhalgat.github.io/
 ├── 📁 assets/                       # Static assets
 │   ├── 📄 profile.jpg               # Profile image (300x300)
 │   ├── 📄 wcareers.jpg              # Project screenshots
-│   ├── 📄 hireme.jpg
+│   ├── 📄 hireme.png
 │   ├── 📄 prosumely.jpg
 │   ├── 📄 favicon.ico               # Site favicon
 │   └── 📁 articles/                 # Article images
@@ -172,11 +183,13 @@ rushabhbhalgat.github.io/
 ## ⚡ Performance
 
 ### **PageSpeed Insights Scores**
+
 - **Mobile**: 95+ (Excellent)
 - **Desktop**: 98+ (Excellent)
 - **Core Web Vitals**: All metrics in "Good" range
 
 ### **Performance Optimizations**
+
 - ✅ **Critical CSS Inlining** (~8KB above-the-fold styles)
 - ✅ **Resource Preloading** (CSS, fonts, hero image)
 - ✅ **Deferred Loading** (non-critical CSS and JavaScript)
@@ -185,13 +198,15 @@ rushabhbhalgat.github.io/
 - ✅ **DNS Prefetch** for external domains
 
 ### **Core Web Vitals**
-| Metric | Target | Achieved |
-|--------|--------|----------|
-| **LCP** (Largest Contentful Paint) | < 2.5s | ~1.8s |
-| **FID** (First Input Delay) | < 100ms | ~50ms |
-| **CLS** (Cumulative Layout Shift) | < 0.1 | ~0.05 |
+
+| Metric                             | Target  | Achieved |
+| ---------------------------------- | ------- | -------- |
+| **LCP** (Largest Contentful Paint) | < 2.5s  | ~1.8s    |
+| **FID** (First Input Delay)        | < 100ms | ~50ms    |
+| **CLS** (Cumulative Layout Shift)  | < 0.1   | ~0.05    |
 
 ### **Performance Budget**
+
 - **HTML**: < 50KB (current: ~45KB)
 - **Critical CSS**: < 10KB (current: ~8KB)
 - **JavaScript**: < 100KB (current: ~25KB)
@@ -202,29 +217,33 @@ rushabhbhalgat.github.io/
 ## 🎨 Design System
 
 ### **Color Palette**
+
 ```css
 :root {
-  --primary-color: #64ffda;      /* Cyan - Primary accent */
-  --secondary-color: #1e3a8a;    /* Blue - Secondary accent */
-  --accent-color: #f59e0b;       /* Amber - Highlight color */
-  --bg-primary: #0a0a0a;         /* Black - Main background */
-  --bg-secondary: #111827;       /* Dark Gray - Card backgrounds */
-  --text-primary: #f9fafb;       /* White - Primary text */
-  --text-secondary: #d1d5db;     /* Light Gray - Secondary text */
+  --primary-color: #64ffda; /* Cyan - Primary accent */
+  --secondary-color: #1e3a8a; /* Blue - Secondary accent */
+  --accent-color: #f59e0b; /* Amber - Highlight color */
+  --bg-primary: #0a0a0a; /* Black - Main background */
+  --bg-secondary: #111827; /* Dark Gray - Card backgrounds */
+  --text-primary: #f9fafb; /* White - Primary text */
+  --text-secondary: #d1d5db; /* Light Gray - Secondary text */
 }
 ```
 
 ### **Typography**
+
 - **Primary Font**: Inter (Modern, readable sans-serif)
 - **Monospace Font**: JetBrains Mono (Code-style, technical aesthetic)
 - **Font Sizes**: Responsive with `clamp()` for fluid scaling
 
 ### **Spacing System**
+
 - **Base Unit**: 1rem (16px)
 - **Scale**: 0.5rem, 1rem, 1.5rem, 2rem, 3rem, 4rem, 5rem
 - **Container**: Max-width 1200px with responsive padding
 
 ### **Animation System**
+
 - **Easing**: Custom cubic-bezier curves for smooth animations
 - **Duration**: 0.2s (fast), 0.3s (normal), 0.5s (slow)
 - **Intersection Observer**: Performance-optimized scroll animations
@@ -234,15 +253,25 @@ rushabhbhalgat.github.io/
 ## 📱 Responsive Design
 
 ### **Breakpoints**
+
 ```css
 /* Mobile First Approach */
-@media (max-width: 480px)  { /* Small mobile */ }
-@media (max-width: 768px)  { /* Mobile/Tablet */ }
-@media (max-width: 1024px) { /* Tablet/Small desktop */ }
-@media (min-width: 1200px) { /* Large desktop */ }
+@media (max-width: 480px) {
+  /* Small mobile */
+}
+@media (max-width: 768px) {
+  /* Mobile/Tablet */
+}
+@media (max-width: 1024px) {
+  /* Tablet/Small desktop */
+}
+@media (min-width: 1200px) {
+  /* Large desktop */
+}
 ```
 
 ### **Responsive Features**
+
 - **Fluid Typography** with `clamp()` for optimal readability
 - **Flexible Grid Layouts** using CSS Grid and Flexbox
 - **Adaptive Navigation** with mobile hamburger menu
@@ -254,21 +283,25 @@ rushabhbhalgat.github.io/
 ## 🔧 Customization
 
 ### **Personal Information**
+
 Update these sections in `index.html`:
 
 1. **Meta Tags** (lines 8-15)
+
    ```html
    <title>Your Name - Title</title>
    <meta name="description" content="Your description" />
    ```
 
 2. **Hero Section** (lines 200-220)
+
    ```html
    <span class="title-name">Your Name</span>
    <p class="hero-description">Your description...</p>
    ```
 
 3. **About Section** (lines 250-300)
+
    - Personal story and background
    - Statistics and achievements
    - Skills and interests
@@ -279,6 +312,7 @@ Update these sections in `index.html`:
    - Location information
 
 ### **Projects**
+
 Update project information in the projects section:
 
 1. **Project Cards** - Update titles, descriptions, and technologies
@@ -287,6 +321,7 @@ Update project information in the projects section:
 4. **Project Modals** - Update detailed descriptions in `js/app.js`
 
 ### **Styling**
+
 Customize the design by modifying CSS custom properties:
 
 ```css
@@ -294,10 +329,10 @@ Customize the design by modifying CSS custom properties:
   /* Update colors */
   --primary-color: #your-color;
   --bg-primary: #your-background;
-  
+
   /* Update fonts */
   --font-primary: "Your-Font", sans-serif;
-  
+
   /* Update spacing */
   --section-padding: 6rem 0; /* Increase section spacing */
 }
@@ -308,6 +343,7 @@ Customize the design by modifying CSS custom properties:
 ## 🚀 Deployment
 
 ### **GitHub Pages (Recommended)**
+
 1. **Fork/Clone** this repository
 2. **Customize** content and images
 3. **Push** changes to your repository
@@ -324,19 +360,23 @@ git push origin main
 ### **Alternative Hosting Platforms**
 
 #### **Netlify**
+
 1. Connect GitHub repository
 2. Build command: (none needed)
 3. Publish directory: `/`
 4. Deploy automatically on push
 
 #### **Vercel**
+
 1. Import from GitHub
 2. Zero configuration deployment
 3. Automatic HTTPS and CDN
 4. Custom domain support
 
 #### **Custom Server**
+
 Upload files to your web server:
+
 ```bash
 # Using SCP
 scp -r * user@yourserver.com:/var/www/html/
@@ -350,6 +390,7 @@ scp -r * user@yourserver.com:/var/www/html/
 ## 📈 SEO & Analytics
 
 ### **SEO Features**
+
 - ✅ **Semantic HTML** with proper heading hierarchy
 - ✅ **Meta Tags** for title, description, keywords
 - ✅ **Open Graph** tags for social media sharing
@@ -359,19 +400,24 @@ scp -r * user@yourserver.com:/var/www/html/
 - ✅ **Robots.txt** for crawler directives
 
 ### **Analytics Integration**
+
 Currently integrated with **Google Analytics 4**:
+
 ```javascript
 // Google Analytics tracking code in <head>
-gtag('config', 'G-CP5TN8BDDE');
+gtag("config", "G-CP5TN8BDDE");
 ```
 
 To use your own analytics:
+
 1. Replace the tracking ID in `index.html`
 2. Update the configuration in Google Analytics
 3. Verify tracking is working with Google Tag Assistant
 
 ### **Performance Monitoring**
+
 Monitor your site performance with:
+
 - **Google PageSpeed Insights**
 - **Google Search Console**
 - **Web Vitals Chrome Extension**
@@ -382,6 +428,7 @@ Monitor your site performance with:
 ## 🧪 Testing
 
 ### **Performance Testing**
+
 ```bash
 # Test with Lighthouse CLI
 npm install -g lighthouse
@@ -392,7 +439,9 @@ lighthouse https://yoursite.com --view
 ```
 
 ### **Cross-Browser Testing**
+
 Test on these browsers:
+
 - ✅ Chrome 80+ (Primary)
 - ✅ Firefox 75+
 - ✅ Safari 13+
@@ -400,12 +449,14 @@ Test on these browsers:
 - ✅ Mobile browsers (iOS Safari, Chrome Mobile)
 
 ### **Accessibility Testing**
+
 - **WAVE Web Accessibility Evaluator**
 - **axe DevTools** browser extension
 - **Lighthouse Accessibility Audit**
 - **Screen reader testing** (NVDA, JAWS, VoiceOver)
 
 ### **Validation**
+
 - **HTML Validator**: [W3C Markup Validator](https://validator.w3.org/)
 - **CSS Validator**: [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
 - **Link Checker**: Verify all internal and external links
@@ -417,6 +468,7 @@ Test on these browsers:
 Contributions are welcome! Here's how you can help:
 
 ### **Types of Contributions**
+
 - 🐛 **Bug Reports** - Report issues or bugs
 - 💡 **Feature Requests** - Suggest new features
 - 🔧 **Code Improvements** - Performance optimizations
@@ -424,6 +476,7 @@ Contributions are welcome! Here's how you can help:
 - 🎨 **Design Enhancements** - UI/UX improvements
 
 ### **Development Process**
+
 1. **Fork** the repository
 2. **Create** a feature branch (`git checkout -b feature/amazing-feature`)
 3. **Commit** your changes (`git commit -m 'Add amazing feature'`)
@@ -431,6 +484,7 @@ Contributions are welcome! Here's how you can help:
 5. **Open** a Pull Request
 
 ### **Code Style Guidelines**
+
 - Use **semantic HTML** elements
 - Follow **BEM methodology** for CSS classes
 - Write **clean, commented JavaScript**
@@ -444,6 +498,7 @@ Contributions are welcome! Here's how you can help:
 This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
 
 ### **What this means:**
+
 - ✅ **Commercial use** - Use for commercial projects
 - ✅ **Modification** - Modify and adapt the code
 - ✅ **Distribution** - Share and distribute
@@ -464,6 +519,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 - 🚀 **Prosumely**: [prosumely.com](https://prosumely.com)
 
 ### **Professional Services**
+
 - 🤖 **AI Development** - Machine Learning & Computer Vision solutions
 - 💻 **Web Development** - Full-stack applications with modern technologies
 - 📊 **Data Science** - Analytics and insights from complex datasets
@@ -486,6 +542,6 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 **Built with ❤️ by [Rushabh Bhalgat](https://rushabhbhalgat.me)**
 
-*Last updated: January 2025*
+_Last updated: January 2025_
 
 </div>

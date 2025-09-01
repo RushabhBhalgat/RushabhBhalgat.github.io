@@ -98,13 +98,13 @@
       :root{--primary-color:#64ffda;--secondary-color:#1e3a8a;--accent-color:#f59e0b;--bg-primary:#0a0a0a;--bg-secondary:#111827;--text-primary:#f9fafb;--text-secondary:#d1d5db;--text-muted:#9ca3af;--border-color:#374151;--glow-color:rgba(100,255,218,0.1);--font-primary:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;--font-mono:"JetBrains Mono","SF Mono",Monaco,monospace;--container-padding:0 2rem;--border-radius-sm:8px;--transition-normal:0.3s ease-out}*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth;font-size:16px}body{font-family:var(--font-primary);background-color:var(--bg-primary);color:var(--text-primary);line-height:1.6;overflow-x:hidden;-webkit-text-size-adjust:100%}.container{max-width:1200px;margin:0 auto;padding:var(--container-padding)}.navbar{position:fixed;top:0;width:100%;background:rgba(10,10,10,0.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--border-color);z-index:1000;transition:all var(--transition-normal)}.nav-container{display:flex;justify-content:space-between;align-items:center;padding:1rem 2rem;max-width:1200px;margin:0 auto}.logo-text{font-family:var(--font-mono);font-size:1.5rem;font-weight:700;color:var(--primary-color)}.nav-menu{display:flex;gap:2rem;align-items:center}.nav-link{display:flex;align-items:center;gap:0.5rem;color:var(--text-secondary);text-decoration:none;padding:0.5rem 1rem;border-radius:var(--border-radius-sm);transition:all var(--transition-normal);min-height:44px}.nav-link:hover,.nav-link.active{color:var(--primary-color);background:var(--glow-color)}.nav-toggle{display:none;flex-direction:column;cursor:pointer;padding:8px;min-width:44px;min-height:44px;justify-content:center;align-items:center}.nav-toggle .bar{width:25px;height:3px;background:var(--text-primary);margin:3px 0;transition:0.3s;border-radius:2px}.hero{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;overflow:hidden}.hero-background{position:absolute;top:0;left:0;width:100%;height:100%;z-index:-1}.hero-content{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;max-width:1200px;margin:0 auto;padding:var(--container-padding)}.hero-text{z-index:2}.hero-title{margin-bottom:2rem}.title-line,.title-name,.title-role{display:block;line-height:1.2}.title-line{font-size:clamp(1.2rem,3vw,1.5rem);color:var(--text-secondary);font-weight:400}.title-name{font-size:clamp(2.5rem,6vw,4rem);font-weight:700;color:var(--text-primary);margin:0.5rem 0}.title-role{font-size:clamp(1.5rem,4vw,2.2rem);font-weight:500;background:linear-gradient(135deg,var(--primary-color),var(--accent-color));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}.hero-typing{font-family:var(--font-mono);font-size:1.2rem;color:var(--primary-color);margin-bottom:2rem;height:2rem}.hero-description{font-size:1.1rem;color:var(--text-secondary);margin-bottom:2rem;line-height:1.8}.hero-buttons{display:flex;gap:1rem;flex-wrap:wrap}.btn-primary,.btn-secondary{display:inline-flex;align-items:center;gap:0.5rem;padding:0.875rem 1.5rem;border-radius:var(--border-radius-sm);font-weight:500;text-decoration:none;transition:all var(--transition-normal);border:none;cursor:pointer;font-size:0.9rem}.btn-primary{background:linear-gradient(135deg,var(--primary-color),var(--secondary-color));color:var(--bg-primary)}.btn-primary:hover{transform:translateY(-2px);box-shadow:0 10px 25px rgba(100,255,218,0.3)}.btn-secondary{background:transparent;color:var(--text-primary);border:2px solid var(--primary-color)}.btn-secondary:hover{background:var(--primary-color);color:var(--bg-primary);transform:translateY(-2px)}.hero-visual{display:flex;justify-content:center;align-items:center;position:relative}.avatar-container{position:relative;width:300px;height:300px}.avatar-image{width:100%;height:100%;border-radius:50%;overflow:hidden;position:relative;z-index:2}.avatar-image img{width:100%;height:100%;object-fit:cover;filter:grayscale(20%);transition:all var(--transition-normal)}.skip-nav{position:absolute;top:-40px;left:6px;background:var(--primary-color);color:var(--bg-primary);padding:8px;text-decoration:none;border-radius:0 0 4px 4px;z-index:9999;font-weight:600;transition:top 0.3s}.skip-nav:focus{top:0}@media (max-width:768px){.nav-menu{position:fixed;top:-100vh;left:0;width:100%;height:calc(100vh - 80px);background:var(--bg-primary);border-top:1px solid var(--border-color);flex-direction:column;gap:0;padding:1rem 0;transition:top var(--transition-normal);overflow-y:auto;z-index:999}.nav-menu.active{top:80px}.nav-toggle{display:flex;z-index:1001}.nav-link{padding:1rem 2rem;border-bottom:1px solid var(--border-color);justify-content:flex-start;font-size:1.1rem}.hero-content{grid-template-columns:1fr;text-align:center;gap:2rem}.hero-buttons{justify-content:center}}@media (max-width:480px){.nav-container{padding:0.75rem 1rem}.hero-title .title-name{font-size:1.75rem}}
     </style>
 
-    <!-- Deferred Non-Critical Resources -->
-    <link rel="preload" href="css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <!-- Critical Performance Fix -->
+    <link rel="stylesheet" href="css/style.css" media="print" onload="this.media='all'" />
     <noscript><link rel="stylesheet" href="css/style.css" /></noscript>
 
-    <!-- Deferred Font Awesome -->
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" /></noscript>
+    <!-- Font Awesome with faster loading -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" /></noscript>
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
@@ -863,6 +863,8 @@
                   width="300"
                   height="300"
                   loading="eager"
+                  fetchpriority="high"
+                  decoding="async"
                 />
               </div>
               <div class="avatar-border"></div>
@@ -1190,9 +1192,9 @@
                     <i class="fab fa-github"></i>
                   </a>
                   <a
-                    href="#"
+                    href="javascript:void(0)"
                     class="project-link"
-                    onclick="openProjectModal('wcareers')"
+                    onclick="event.preventDefault(); openProjectModal('wcareers')"
                   >
                     <i class="fas fa-external-link-alt"></i>
                   </a>
@@ -1203,11 +1205,7 @@
               <div class="project-category">AI Platform</div>
               <h3 class="project-title">WCareers</h3>
               <p class="project-description">
-                AI-Powered Employment & Skill Development Platform built for the
-                Government of Punjab. Features job matching with employers,
-                personalized learning pathways powered by LLM API, secure
-                authentication, adaptive assessment engine (like GMAT), and mock
-                interview system with real-time dashboards.
+                AI-Powered Employment Platform for Government of Punjab featuring intelligent job matching, personalized learning pathways, and adaptive assessment systems.
               </p>
               <div class="project-tech">
                 <span class="tech-tag">Node.js</span>
@@ -1222,7 +1220,7 @@
           <div class="project-card" data-category="ai web">
             <div class="project-image">
               <img
-                src="assets/hireme.jpg"
+                src="assets/hireme.png"
                 alt="HireMe Platform"
                 loading="lazy"
               />
@@ -1236,9 +1234,9 @@
                     <i class="fab fa-github"></i>
                   </a>
                   <a
-                    href="#"
+                    href="javascript:void(0)"
                     class="project-link"
-                    onclick="openProjectModal('hireme')"
+                    onclick="event.preventDefault(); openProjectModal('hireme')"
                   >
                     <i class="fas fa-external-link-alt"></i>
                   </a>
@@ -1249,9 +1247,7 @@
               <div class="project-category">AI Assessment</div>
               <h3 class="project-title">HireMe</h3>
               <p class="project-description">
-                Smart India Hackathon project featuring AI-driven voice
-                analysis, game-based assessments, and personalized development
-                plans for comprehensive candidate evaluation.
+                Smart India Hackathon finalist project featuring AI-driven voice analysis, game-based assessments, and comprehensive candidate evaluation systems.
               </p>
               <div class="project-tech">
                 <span class="tech-tag">Python</span>
@@ -1286,16 +1282,54 @@
               <div class="project-category">Business Platform</div>
               <h3 class="project-title">Prosumely</h3>
               <p class="project-description">
-                Resume and LinkedIn Profile Makeover services platform serving
-                500+ clients across 20+ countries. Built with Next.js and
-                Payload CMS on Vercel for optimal performance and SEO
-                optimization.
+                Global resume and LinkedIn optimization platform serving 500+ clients with professional makeover services across 20+ countries worldwide.
               </p>
               <div class="project-tech">
                 <span class="tech-tag">Next.js</span>
                 <span class="tech-tag">Payload CMS</span>
                 <span class="tech-tag">Vercel</span>
                 <span class="tech-tag">SEO</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="ai">
+            <div class="project-image">
+              <img
+                src="assets/emotion_detection_using_cnn.png"
+                alt="Emotion Detection Using CNN"
+                loading="lazy"
+              />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a
+                    href="https://github.com/RushabhBhalgat/Emotion-Detection-Using-CNN"
+                    target="_blank"
+                    class="project-link"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a
+                    href="javascript:void(0)"
+                    class="project-link"
+                    onclick="event.preventDefault(); openProjectModal('emotion')"
+                  >
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-category">Deep Learning</div>
+              <h3 class="project-title">Emotion Detection Using CNN</h3>
+              <p class="project-description">
+                Real-time emotion recognition system using advanced CNN architecture for accurate facial expression classification and analysis.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">CNN</span>
+                <span class="tech-tag">TensorFlow</span>
+                <span class="tech-tag">OpenCV</span>
+                <span class="tech-tag">Python</span>
               </div>
             </div>
           </div>
@@ -1310,9 +1344,9 @@
               <div class="project-overlay">
                 <div class="project-links">
                   <a
-                    href="#"
+                    href="javascript:void(0)"
                     class="project-link"
-                    onclick="openProjectModal('attendance')"
+                    onclick="event.preventDefault(); openProjectModal('attendance')"
                   >
                     <i class="fas fa-external-link-alt"></i>
                   </a>
@@ -1323,9 +1357,7 @@
               <div class="project-category">Computer Vision</div>
               <h3 class="project-title">Attendance Management System</h3>
               <p class="project-description">
-                Smart attendance system using OpenCV with Haar Cascade and LBPH
-                for real-time face detection and recognition. Integrated with
-                Django for analytics and SQLite for data storage.
+                IoT-enabled smart attendance system using OpenCV computer vision for contactless face recognition with Django analytics dashboard.
               </p>
               <div class="project-tech">
                 <span class="tech-tag">OpenCV</span>
@@ -1985,8 +2017,8 @@
         
         // Preload critical scripts
         const scripts = [
-          'js/particles-lite.js',
-          'js/app-optimized.js'
+          'js/particles.js',
+          'js/app.js'
         ];
         
         scripts.forEach(src => {
@@ -1999,8 +2031,8 @@
       })();
     </script>
     
-    <!-- Load optimized scripts -->
-    <script src="js/particles-lite.js" defer></script>
-    <script src="js/app-optimized.js" defer></script>
+    <!-- Load original scripts -->
+    <script src="js/particles.js" defer></script>
+    <script src="js/app.js" defer></script>
   </body>
 </html>
